@@ -17,7 +17,13 @@ module.exports = {
       'extends': [
         'plugin:cypress/recommended'
       ]
-    }
+    },
+    {
+      files: ['**/*.cjs'],
+      env: {
+        node: true,
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest'
